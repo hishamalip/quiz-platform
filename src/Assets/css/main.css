@@ -1,0 +1,19 @@
+.jumbotron{
+    /* padding: 5vw 5vw 5vw 5vw;  */
+    margin: 5vw;
+    width: 90vw;
+    background-color:black;
+    /* padding: 1vw; */
+}
+body {
+    background:  #444444;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    /* overflow: hidden; */
+    padding: 0vw;
+    /* align-content: center;
+    align-items: center; */
+  }
+  
+  a {
+    color: white;
+  }
