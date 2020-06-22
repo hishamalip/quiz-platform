@@ -5,7 +5,7 @@ export default function Landing() {
         <div>
             <header>
                 This is Landing
-    </header>
+            </header>
         </div>
     )
 }
