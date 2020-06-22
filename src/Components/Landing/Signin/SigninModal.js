@@ -1,10 +1,7 @@
 import React from "react";
 import { Button, Modal } from "react-bootstrap";
 
-// static backdrop
-// with animation
-// vertically centered
-// custom size
+import SigninForm from "./SigninForm.js";
 
 export default class SigninModal extends React.Component {
     render() {
@@ -34,13 +31,13 @@ export default class SigninModal extends React.Component {
                     >
 
                         <Modal.Header closeButton>
-                            <Modal.Title>Modal title</Modal.Title>
+                            <Modal.Title>Sign In</Modal.Title>
                         </Modal.Header>
 
                         <Modal.Body>
-                            I will not close if you click outside me. Don't even try to press
-                            escape key.
-                            </Modal.Body>
+                            {/* include sign in form */}
+                            <SigninForm />
+                        </Modal.Body>
 
                         <Modal.Footer>
                             <Button variant="dark" onClick={handleClose}>

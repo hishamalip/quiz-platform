@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Modal } from "react-bootstrap";
 
+import SignupForm from "./SignupForm.js";
+
 export default class SignupModal extends React.Component {
     render() {
         function Signup(props) {
@@ -11,7 +13,7 @@ export default class SignupModal extends React.Component {
             return (
                 <>
                     <Button variant="success" onClick={handleShow}>
-                        Sign In
+                        Sign Up
                     </Button>
 
                     <Modal
@@ -29,19 +31,19 @@ export default class SignupModal extends React.Component {
                     >
 
                         <Modal.Header closeButton>
-                            <Modal.Title>Modal title</Modal.Title>
+                            <Modal.Title>Sign Up</Modal.Title>
                         </Modal.Header>
 
                         <Modal.Body>
-                            I will not close if you click outside me. Don't even try to press
-                            escape key.
-                            </Modal.Body>
+                            {/* include sign up form */}
+                            <SignupForm />
+                        </Modal.Body>
 
                         <Modal.Footer>
                             <Button variant="dark" onClick={handleClose}>
                                 Go Back!
                                 </Button>
-                            <Button variant="success">Sign In</Button>
+                            <Button variant="success">Sign Up</Button>
                         </Modal.Footer>
                     </Modal>
                 </>
