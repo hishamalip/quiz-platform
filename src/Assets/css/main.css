@@ -3,8 +3,6 @@ body {
   font: calc(10px + 2vmin) "Lucida Grande", Helvetica, Arial, sans-serif;
   padding: 0vw;
   overflow: hidden;
-  /* align-content: center;
-  align-items: center; */
 }
 
 a {
@@ -21,6 +19,7 @@ a {
     margin-right: 20vw;
     /* overflow-y: scroll; */
 }
+/* sidebar in dashboard */
 .sidebar{
   padding-top: 5vw;
   background-color: rgb(34, 33, 33);
@@ -33,16 +32,29 @@ a {
   color: white;
 }
 .profile{
+  height: 80vh;
   margin: 1vw;
-  border: 2px solid whitesmoke;
   padding: 10px;
-  border-radius: 10px;
+
+  background-color: rgb(34, 33, 33);
 }
 .Profile-pic {
   height: 10vw;
+  /* border: 2px solid whitesmoke; */
   pointer-events: none;
+  /* border-radius: 10px; */
 }
+.profile-details {
+  padding-top: 5vw;
 
+  border: 2px solid whitesmoke;
+  padding-bottom: 2vw;
+  pointer-events: none;
+  border-radius: 10px;
+}
+/* sidebar in dashboard */
+
+/* Table */
 #scores {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -55,9 +67,7 @@ a {
 }
 
 #scores tr:nth-child(even){background-color: #f2f2f2;}
-
 #scores tr:hover {background-color: #ddd;}
-
 #scores th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -65,13 +75,40 @@ a {
   background-color: black;
   color: white;
 }
-@media only screen and (max-width: 760px) {
+/* Table */
+
+/* not displaying profile in navbar for desktop */
+@media only screen and (min-width: 601px ) {
+  .navbar #profile{
+    display: none;
+  }
+}
+/* not displaying profile in navbar for desktop */
+/* code for mobile */
+@media only screen and (max-width: 600px) {
   .sidebar {
     display: none;
   }
   .jumbotron{
+    position: relative;
     width: 90vw;
     left: 0vw;
     margin: 5vw;
+    overflow: none;
+  }
+ .overlay{
+   overflow-y:scroll;
+  }
+
+  .profile{
+    width: 100vw;
+    height: 100vh;
+  }
+  .Profile-pic{
+    height: 20vh;
+  }
+  .profile-details{
+    color: white;
   }
 }
+/* code for mobile */
