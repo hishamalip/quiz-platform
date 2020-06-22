@@ -1,0 +1,114 @@
+body {
+  background:  black;
+  font: calc(10px + 2vmin) "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0vw;
+  overflow: hidden;
+}
+
+a {
+  color: white;
+}
+
+.jumbotron{
+    background-color:black;
+    overflow-y: scroll;
+    position: fixed;
+    height: 90vh;
+    left: 20vw;
+    width: 80vw;
+    margin-right: 20vw;
+    /* overflow-y: scroll; */
+}
+/* sidebar in dashboard */
+.sidebar{
+  padding-top: 5vw;
+  background-color: rgb(34, 33, 33);
+  overflow: hidden;
+  width: 20vw;
+  height: 100vh;
+	position: absolute; 
+	left: 0;
+	scroll-behavior: smooth;
+  color: white;
+}
+.profile{
+  height: 80vh;
+  margin: 1vw;
+  padding: 10px;
+
+  background-color: rgb(34, 33, 33);
+}
+.Profile-pic {
+  height: 10vw;
+  /* border: 2px solid whitesmoke; */
+  pointer-events: none;
+  /* border-radius: 10px; */
+}
+.profile-details {
+  padding-top: 5vw;
+
+  border: 2px solid whitesmoke;
+  padding-bottom: 2vw;
+  pointer-events: none;
+  border-radius: 10px;
+}
+/* sidebar in dashboard */
+
+/* Table */
+#scores {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#scores td, #scores th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#scores tr:nth-child(even){background-color: #f2f2f2;}
+#scores tr:hover {background-color: #ddd;}
+#scores th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+/* Table */
+
+/* not displaying profile in navbar for desktop */
+@media only screen and (min-width: 601px ) {
+  .navbar #profile{
+    display: none;
+  }
+}
+/* not displaying profile in navbar for desktop */
+/* code for mobile */
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  .jumbotron{
+    position: relative;
+    width: 90vw;
+    left: 0vw;
+    margin: 5vw;
+    overflow: none;
+  }
+ .overlay{
+   overflow-y:scroll;
+  }
+
+  .profile{
+    width: 100vw;
+    height: 100vh;
+  }
+  .Profile-pic{
+    height: 20vh;
+  }
+  .profile-details{
+    color: white;
+  }
+}
+/* code for mobile */
