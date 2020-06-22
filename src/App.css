@@ -1,9 +1,17 @@
+
+.App {
+  text-align: center;
+  overflow: hidden;
+  background-color: #282c34;
+}
+
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  /* width: 110vw; */
+  height: 10vh;
   align-items: flex-start;
 }
 
@@ -13,12 +21,14 @@
   display: block;
   color: #f2f2f2;
   text-align: right;
-  padding: 5vw 20vw 5vw 20vw;
+  padding: 5px 20px 5px 20px;
   text-decoration: none;
 }
 
 /* Change background on mouse-over */
 .navbar a:hover {
-  background: #ddd;
+  background: rgb(9, 120, 184);
   color: black;
+  border-radius: 10px;
+  text-underline-position: none;
 }

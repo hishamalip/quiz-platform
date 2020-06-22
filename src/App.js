@@ -12,14 +12,6 @@ import 'bootstrap/dist/css/bootstrap.css';
   
 // }
 class App extends Component {
-  state = {
-      toggle:false
-  }
-  Toggle = () => {
-      this.setState({toggle:!this.state.toggle});
-      console.log(this.state.toggle);
-      
-  }
   render() {
       return (
     <BrowserRouter>
