@@ -49,6 +49,8 @@ export default class SignupModal extends React.Component {
                 </>
             );
         }
+
+        
         return (
             <Signup />
         );
