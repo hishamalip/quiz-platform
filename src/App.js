@@ -4,7 +4,7 @@ import PublicRoute from "./Route/Publicroute"
 import { BrowserRouter, Switch } from "react-router-dom";
 import Landing from "./Components/Landing/Landing"
 import Dashboard from "./Components/Dashboard/Dashboard"
-import "./App.css"
+// import "./App.css"
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from './Components/Navbar';
 // Put any other imports below so that CSS from your
@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <Navbar />
+        {/* <Navbar /> */}
         <BrowserRouter>
           <Switch>
             <PublicRoute component={Landing} path="/" exact />
