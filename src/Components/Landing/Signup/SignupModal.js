@@ -49,11 +49,8 @@ export default class SignupModal extends React.Component {
                 </>
             );
         }
-<<<<<<< HEAD
 
         // return from class
-=======
->>>>>>> parent of b356de7... commit test, nothing serious
         return (
             <Signup />
         );
