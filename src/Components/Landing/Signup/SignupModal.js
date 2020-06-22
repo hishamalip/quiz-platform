@@ -50,6 +50,7 @@ export default class SignupModal extends React.Component {
             );
         }
 
+        
         // return from class
         return (
             <Signup />
