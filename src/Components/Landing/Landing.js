@@ -1,5 +1,5 @@
-import React from 'react';
-import '../../Assets/css/landing/landing.css';
+import React from "react";
+import "../../Assets/css/landing/landing.css";
 
 import NavigationBar from './NavigationBar.js';
 import SigninModal from "./Signin/SigninModal.js";
