@@ -2,10 +2,10 @@ import React from "react";
 import { Button, Modal, Form } from "react-bootstrap";
 
 export default class Signin extends React.Component {
-    constructor(props) {
-        super(props);
-        // this.state = { email_text: "asf"}
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = { email_text: "asf"}
+    // }
 
     render() {
         return (
@@ -16,7 +16,7 @@ export default class Signin extends React.Component {
 
 
 function SigninModal(props) {
-    let x = new Signin();
+    // let x = new Signin();
 
     // for modal operetion
     const [show, setShow] = React.useState(false);
