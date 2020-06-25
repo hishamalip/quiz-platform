@@ -1,26 +1,18 @@
 import React from "react";
 import { Button, Modal, Form } from "react-bootstrap";
 
-export default class Signin extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = { email_text: "asf"}
-    // }
-
+export default class Signup extends React.Component {
     render() {
         return (
-            <SigninModal />
+            <SignupModal />
         );
     }
 }
 
 
-function SigninModal(props) {
-    // let x = new Signin();
-
-    // for modal operetion
+function SignupModal(props) {
     const [show, setShow] = React.useState(false);
-    const handleClose = () => { setShow(false); }
+    const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     // for form validation
@@ -34,22 +26,10 @@ function SigninModal(props) {
         setValidated(true);
     };
 
-    // function emailChangeEvent(event) {
-    //     var x = new Signin();
-    //     let t = event.target.value;
-    //     // x.conte( { email_text: t});
-    //     x.state.setState({ email_text: t});
-    //     console.log(x.state.email_text);
-    //     // x/s.setState({
-    //     //     email_text: e.target.value
-    //     // });
-    //     // console.log(this.state.email_text);
-    // }
-
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
-                Sign In
+            <Button variant="success" onClick={handleShow}>
+                Sign Up
             </Button>
 
             <Modal
@@ -67,13 +47,12 @@ function SigninModal(props) {
             >
 
                 <Modal.Header closeButton>
-                    <Modal.Title>Sign In</Modal.Title>
-
+                    <Modal.Title>Sign Up</Modal.Title>
                 </Modal.Header>
+
 
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
                     <Modal.Body>
-                        {/* <input type="text" onChange={emailChangeEvent}/> */}
                         <Form.Group controlId="formGroupEmail">
                             <Form.Control type="email" placeholder="Enter email" required />
                             <Form.Control.Feedback type="invalid">Enter a valid Email-Id</Form.Control.Feedback>
@@ -81,15 +60,26 @@ function SigninModal(props) {
 
                         <Form.Group controlId="formGroupPassword">
                             <Form.Control type="password" placeholder="Password" required />
-                            <Form.Control.Feedback type="invalid">Enter your password.</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">Password Constraints</Form.Control.Feedback>
+                            <Form.Text id="passwordHelpBlock" muted>
+                                Password Constraints
+                            </Form.Text>
+                        </Form.Group>
+
+                        <Form.Group controlId="formGroupRePassword">
+                            <Form.Control type="password" placeholder="Re-type Password" required />
+                            <Form.Control.Feedback type="invalid">Password doesn't match</Form.Control.Feedback>
                         </Form.Group>
                     </Modal.Body>
 
                     <Modal.Footer>
-                        <Button variant="dark" onClick={handleClose}>Go Back!</Button>
-                        <Button type="submit" variant="primary">Sign In</Button>
+                        <Button variant="dark" onClick={handleClose}>
+                            Go Back!
+                        </Button>
+                        <Button type="submit" variant="success">Sign Up</Button>
                     </Modal.Footer>
                 </Form>
+
             </Modal>
         </>
     );

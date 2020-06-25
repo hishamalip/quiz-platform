@@ -2,8 +2,8 @@ import React from "react";
 import "../../Assets/css/landing/landing.css";
 
 import NavigationBar from './NavigationBar.js';
-import SigninModal from "./Signin/SigninModal.js";
-import SignupModal from "./Signup/SignupModal.js";
+import Signin from "./Signin/Signin.js";
+import Signup from "./Signup/Signup.js";
 
 export default class Landing extends React.Component {
     render() {
@@ -14,8 +14,8 @@ export default class Landing extends React.Component {
                     <center>
                         Heading
                         <br />
-                        <SigninModal /> &emsp;
-                        <SignupModal />
+                        <Signin /> &emsp;
+                        <Signup />
                     </center>
                     
                 </div>
