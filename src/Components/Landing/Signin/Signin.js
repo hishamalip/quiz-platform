@@ -2,10 +2,10 @@ import React from "react";
 import { Button, Modal, Form } from "react-bootstrap";
 
 export default class Signin extends React.Component {
-    constructor(props) {
-        super(props);
-        // this.state = { email_text: "asf"}
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = { email_text: "asf"}
+    // }
 
     render() {
         return (
@@ -16,7 +16,7 @@ export default class Signin extends React.Component {
 
 
 function SigninModal(props) {
-    let x = new Signin();
+    // let x = new Signin();
 
     // for modal operetion
     const [show, setShow] = React.useState(false);
@@ -75,13 +75,13 @@ function SigninModal(props) {
                     <Modal.Body>
                         {/* <input type="text" onChange={emailChangeEvent}/> */}
                         <Form.Group controlId="formGroupEmail">
-                            <Form.Control type="email" placeholder="Enter email" required />
-                            <Form.Control.Feedback type="invalid">Enter a valid Email-Id</Form.Control.Feedback>
+                            <Form.Control type="text" placeholder="Enter email" required />
+                            <Form.Control.Feedback type="invalid">This field is required</Form.Control.Feedback>
                         </Form.Group>
 
                         <Form.Group controlId="formGroupPassword">
                             <Form.Control type="password" placeholder="Password" required />
-                            <Form.Control.Feedback type="invalid">Enter your password.</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">This field is required</Form.Control.Feedback>
                         </Form.Group>
                     </Modal.Body>
 
