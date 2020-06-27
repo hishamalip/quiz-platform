@@ -22,9 +22,9 @@ export default class Signin extends React.Component {
                                     <div className="modal-body">
                                         <div className="form-group">
                                             <input
-                                                type="email"
-                                                name="email"
-                                                placeholder="email"
+                                                type="text"
+                                                name="username"
+                                                placeholder="username or email"
 
                                             />
                                         </div>
@@ -37,7 +37,7 @@ export default class Signin extends React.Component {
                                             />
                                         </div>
 
-                                        <button type="submit" className="btn btn-block btn-success">Sign In</button>
+                                        <button type="submit" className="btn btn-block btn-primary">Sign In</button>
                                     </div>
                                 </form>
 
